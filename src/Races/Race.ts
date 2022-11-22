@@ -3,4 +3,6 @@ export default abstract class Race {
 
   get name() { return this._name; }
   get dexterity() { return this._dexterity; }
+
+  abstract get maxLifePoints(): number;
 }
