@@ -1,7 +1,7 @@
 import Archetype from './Archetype';
 import Mage from './Mage';
 import Necromancer from './Necromancer';
-import Race from '../Races';
+import Ranger from './Ranger';
 import Warrior from './Warrior';
 
 export default Archetype;
@@ -9,6 +9,6 @@ export default Archetype;
 export {
   Mage,
   Necromancer,
-  Race,
+  Ranger,
   Warrior,
 };
