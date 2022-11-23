@@ -40,4 +40,13 @@ export default class Character implements Fighter {
       amount: this._energy.amount,
     };
   }
+
+  receiveDamage(attackPoints: number): number {
+    let damage = attackPoints - this.defense;
+    if (damage <= 0) damage = 1;
+    let newLifePoints = this.lifePoints - damage;
+    if (newLifePoints <= 0) newLifePoints = -1;
+    this._lifePoints = newLifePoints;
+    return this._lifePoints;
+  }
 }
